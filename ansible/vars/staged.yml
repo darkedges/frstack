@@ -15,7 +15,7 @@ opendj_download_url: "{{opendj_maven_url}}/{{opendj_zip}}"
 
 
 # OpenAM builds
-openam_version: "12.0.0-RC3"
+openam_version: "12.0.0"
 openam_maven: "{{maven}}/openam/openam-distribution-kit/{{openam_version}}"
 openam_zip_file: "openam-distribution-kit-{{openam_version}}.zip"
 openam_download_url: "{{openam_maven}}/{{openam_zip_file}}"
@@ -31,9 +31,9 @@ apache_agent_download_url: "http://download.forgerock.org/downloads/openam/webag
 
 
 # OpenIG
-openig_version: "3.1.0-SNAPSHOT"
+openig_version: "3.1.0"
 openig_maven: "{{maven}}/openig/openig-war/{{openig_version}}"
-openig_zip: "OpenIG-{{openig_version}}.war"
+openig_zip: "openig-war-{{openig_version}}.war"
 openig_download_url: "{{openig_maven}}/{{openig_zip}}"
 
 ## Things that are not in Maven we get from Jenkins

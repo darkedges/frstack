@@ -37,10 +37,10 @@
   template: src=amadmin_pw dest={{home_dir}}/etc/amadmin_pw mode=0400 owner=fr
   
 - name: copy bin helpers
-  template: src={{item}} dest={{home_dir}}/bin mode=0755 owner=fr
+  template: src={{item}} dest={{home_dir}}/bin/{{item}} mode=0755 owner=fr
   with_items:
-    - list-policies
-    - import-policies
+   - list-policies
+   - import-policies
   
 - name: set up bashrc 
   template: src=bashrc dest={{home_dir}}/.bashrc
